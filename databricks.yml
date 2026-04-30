@@ -11,6 +11,9 @@ permissions:
   - group_name: de_group
     level: CAN_MANAGE
 
+  - user_name: rohit.mathw@gmail.com
+    level: CAN_MANAGE
+
 targets:
   dev:
     mode: development
