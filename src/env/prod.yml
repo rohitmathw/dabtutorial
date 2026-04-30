@@ -1,0 +1,7 @@
+targets:
+  prod:
+    permissions:
+      - group_name: de_group
+        level: CAN_RUN
+      - group_name: de_group
+        level: CAN_VIEW
