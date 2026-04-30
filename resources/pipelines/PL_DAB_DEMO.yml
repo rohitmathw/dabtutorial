@@ -9,6 +9,6 @@ resources:
       libraries:
         - notebook:
             path: ../notebooks/NB_Delta_Orders.sql
-      schema: bronze
+      schema: ${resources.schemas.bronze_schema.name}
       development: true
-      catalog: ctlg_rm_dev_ext
+      catalog: ${resources.schemas.bronze_schema.catalog_name}

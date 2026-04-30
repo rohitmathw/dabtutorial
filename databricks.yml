@@ -6,6 +6,7 @@ include:
   - src/env/*.yml
   - resources/jobs/*.yml
   - resources/pipelines/*.yml
+  - resources/schemas/*.yml
 
 permissions:
   - group_name: de_group
