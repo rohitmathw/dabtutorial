@@ -1,0 +1,24 @@
+bundle:
+ - name: dabbundle
+
+include:
+  - src/*.yml
+  - src/env/*.yml
+  - resources/jobs/*.yml
+  - resources/pipelines/*.yml
+
+permissions:
+  - group_name: de_group
+    level: CAN_MANAGE
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://adb-7405617536905273.13.azuredatabricks.net/
+
+  prod:
+    default: false
+    workspace:
+      host: https://adb-7405617536905273.13.azuredatabricks.net/
