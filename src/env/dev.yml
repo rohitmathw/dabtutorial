@@ -3,6 +3,8 @@ targets:
     permissions:
       - group_name: de_group
         level: CAN_MANAGE
+      - user_name: rohit.mathw@gmail.com
+        level: CAN_MANAGE
         
     presets:
       name_prefix: (dev ${workspace.current_user.short_name})

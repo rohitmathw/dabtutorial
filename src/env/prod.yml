@@ -5,3 +5,7 @@ targets:
         level: CAN_RUN
       - group_name: de_group
         level: CAN_VIEW
+      - user_name: rohit.mathw@gmail.com
+        level: CAN_RUN
+      - user_name: rohit.mathw@gmail.com
+        level: CAN_VIEW
