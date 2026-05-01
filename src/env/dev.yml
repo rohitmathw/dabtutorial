@@ -1,10 +1,11 @@
 targets:
   dev:
     permissions:
-      - group_name: de_group
-        level: CAN_MANAGE
       - user_name: rohit.mathw@gmail.com
         level: CAN_MANAGE
+    
+    variables:
+      catalog: ctlg_rm_dev_ext
         
     presets:
       name_prefix: (dev ${workspace.current_user.short_name})

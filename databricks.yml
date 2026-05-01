@@ -1,5 +1,12 @@
 bundle:
- name: dabbundle
+  name: dabundle
+  databricks_cli_version: ">= 0.299.0"
+  git:
+    origin_url: https://github.com/rohitmathw/dabtutorial.git
+    branch: master
+
+run_as:
+  user_name: rohit.mathw@gmail.com
 
 include:
   - src/*.yml
@@ -9,9 +16,6 @@ include:
   - resources/schemas/*.yml
 
 permissions:
-  - group_name: de_group
-    level: CAN_MANAGE
-
   - user_name: rohit.mathw@gmail.com
     level: CAN_MANAGE
 
@@ -21,7 +25,7 @@ targets:
     default: true
     workspace:
       host: https://adb-7405617536905273.13.azuredatabricks.net/
-
+  
   prod:
     default: false
     workspace:

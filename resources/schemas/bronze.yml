@@ -1,5 +1,5 @@
 resources:
   schemas:
-    bronze:
-      schema: bronze
+    bronze_schema:
+      name: bronze
       catalog_name: ${var.catalog}
